@@ -42,5 +42,5 @@ void ball(pair center, real radius, int p, pen color=gray(0))
 // Returns the distance between p1 and p2 in L_p.
 real dist(pair p1, pair p2, int p)
 {
-    return ( (p1.x - p2.x)^p + (p1.y - p2.y)^p )^(1/p);
+    return ( abs(p1.x - p2.x)^p + abs(p1.y - p2.y)^p )^(1/p);
 }
